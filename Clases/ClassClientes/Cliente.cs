@@ -11,6 +11,8 @@ namespace ClassClientes
         private DateTime fechaSalida;
         private Servicio servicio;
 
+        public Cliente() { }
+
         public Cliente (int id, Auto auto, Servicio servicio, DateTime fechaLlegada, DateTime fechaSalida)
         {
             this.id = id;

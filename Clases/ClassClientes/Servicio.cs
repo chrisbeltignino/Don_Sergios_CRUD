@@ -52,7 +52,7 @@ namespace ClassLibrary
             set { repuestos = value; }
         }
 
-        public decimal Precio
+        public double Precio
         {
             get { return precio; }
             set { precio = value; }

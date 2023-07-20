@@ -11,17 +11,24 @@ namespace ClassLibrary
     {
         private string patente;
         private eModelos modelo;
-        private eAño año;
-        private Cliente cliente;
-
-        public Auto() { }
+        private int año;
+        /*private Cliente cliente;
 
         public Auto(string patente, eModelos modelo, Cliente cliente) 
         {
             this.patente = patente;
             this.modelo = modelo;
             this.cliente = cliente;
+        }*/
+
+        public Auto(string patente, eModelos modelo, int año)
+        {
+            this.patente = patente;
+            this.modelo = modelo;
+            this.año = año;
         }
+
+        public Auto() { }
 
         public static bool operator ==(Auto a1, Auto a2)
         {
@@ -76,18 +83,29 @@ namespace ClassLibrary
 
         public eModelos EnumModelo 
         {
-            get {  return this.modelo; } 
+            get {  return this.modelo; }
+            set { this.modelo = value; }
         }
 
-        public eAño EnumAño 
+        public string ModeloSeleccionado
+        {
+            get
+            {
+                string modelo = this.modelo.ToString();
+                return modelo;
+            }
+        }
+
+        public int EnumAño 
         {
             get { return this.año; }
+            set { this.año = value; }
         }
-
+        /*
         public Cliente Cliente
         {
             get { return this.cliente; }
             set { this.cliente = value; }
-        }
+        }*/
     }
 }

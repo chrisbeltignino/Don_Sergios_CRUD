@@ -1,4 +1,5 @@
 ﻿using ClassClientes;
+using ClassLibrary;
 using System;
 using System.Collections.Generic;
 
@@ -11,6 +12,8 @@ namespace ConsoleApp
 
         static void Main()
         {
+            CargarDatosAleatorios(5); // Cargamos 5 clientes con datos aleatorios
+
             while (true)
             {
                 Console.WriteLine("Seleccione una opción:");
@@ -66,11 +69,8 @@ namespace ConsoleApp
             Console.WriteLine("Ingrese la patente del auto:");
             string patente = Console.ReadLine();
 
-            Console.WriteLine("Ingrese la marca del auto:");
-            string marca = Console.ReadLine();
-
             Console.WriteLine("Ingrese el modelo del auto:");
-            string modelo = Console.ReadLine();
+            int modelo = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Ingrese el año del auto:");
             int anio = int.Parse(Console.ReadLine());
@@ -85,7 +85,7 @@ namespace ConsoleApp
             string repuestos = Console.ReadLine();
 
             Console.WriteLine("Ingrese el precio del servicio:");
-            decimal precio = decimal.Parse(Console.ReadLine());
+            double precio = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Ingrese las observaciones del servicio:");
             string observaciones = Console.ReadLine();
@@ -98,18 +98,18 @@ namespace ConsoleApp
                 Direccion = direccion,
                 Telefono = numeroTelefono,
                 Facebook = facebook,
-                Auto = new ClassLibrary.Auto
+                Auto = new Auto
                 {
                     Patente = patente,
-                    EnumModelo = modelo,
-                    Anio = anio
+                    EnumModelo = (eModelos)modelo,
+                    EnumAño = anio
                 },
                 Servicio = new Servicio
                 {
                     Problemas = problemas,
                     PruebasRealizadas = pruebas,
                     Repuestos = repuestos,
-                    Precios = precio,
+                    Precio = precio,
                     Observaciones = observaciones
                 },
                 FechaLlegada = DateTime.Now
@@ -136,20 +136,19 @@ namespace ConsoleApp
             Console.WriteLine("----- Clientes -----");
             foreach (var cliente in clientes)
             {
-                Console.WriteLine($"ID: {cliente.Id}");
+                Console.WriteLine($"ID: {cliente.ID}");
                 Console.WriteLine($"Nombre: {cliente.Nombre}");
                 Console.WriteLine($"Apellido: {cliente.Apellido}");
                 Console.WriteLine($"Dirección: {cliente.Direccion}");
-                Console.WriteLine($"Número de Teléfono: {cliente.NumeroTelefono}");
+                Console.WriteLine($"Número de Teléfono: {cliente.Telefono}");
                 Console.WriteLine($"Facebook: {cliente.Facebook}");
                 Console.WriteLine($"Patente del Auto: {cliente.Auto.Patente}");
-                Console.WriteLine($"Marca del Auto: {cliente.Auto.Marca}");
-                Console.WriteLine($"Modelo del Auto: {cliente.Auto.Modelo}");
-                Console.WriteLine($"Año del Auto: {cliente.Auto.Anio}");
+                Console.WriteLine($"Modelo del Auto: {cliente.Auto.EnumModelo}");
+                Console.WriteLine($"Año del Auto: {cliente.Auto.EnumAño}");
                 Console.WriteLine($"Problemas del Servicio: {cliente.Servicio.Problemas}");
                 Console.WriteLine($"Pruebas Realizadas: {cliente.Servicio.PruebasRealizadas}");
                 Console.WriteLine($"Repuestos: {cliente.Servicio.Repuestos}");
-                Console.WriteLine($"Precio del Servicio: {cliente.Servicio.Precios}");
+                Console.WriteLine($"Precio del Servicio: {cliente.Servicio.Precio}");
                 Console.WriteLine($"Observaciones: {cliente.Servicio.Observaciones}");
                 Console.WriteLine($"Fecha de Llegada: {cliente.FechaLlegada}");
                 Console.WriteLine($"Fecha de Salida: {cliente.FechaSalida}");
@@ -162,7 +161,7 @@ namespace ConsoleApp
             Console.WriteLine("Ingrese el ID del cliente que desea actualizar:");
             int id = int.Parse(Console.ReadLine());
 
-            Cliente cliente = clientes.Find(c => c.Id == id);
+            Cliente cliente = clientes.Find(c => c.ID == id);
             if (cliente == null)
             {
                 Console.WriteLine("Cliente no encontrado.");
@@ -192,7 +191,7 @@ namespace ConsoleApp
             string marca = Console.ReadLine();
 
             Console.WriteLine("Ingrese el nuevo modelo del auto:");
-            string modelo = Console.ReadLine();
+            int modelo = int.Parse(Console.ReadLine());
 
             Console.WriteLine("Ingrese el nuevo año del auto:");
             int anio = int.Parse(Console.ReadLine());
@@ -207,7 +206,7 @@ namespace ConsoleApp
             string repuestos = Console.ReadLine();
 
             Console.WriteLine("Ingrese el nuevo precio del servicio:");
-            decimal precio = decimal.Parse(Console.ReadLine());
+            double precio = double.Parse(Console.ReadLine());
 
             Console.WriteLine("Ingrese las nuevas observaciones del servicio:");
             string observaciones = Console.ReadLine();
@@ -215,16 +214,15 @@ namespace ConsoleApp
             cliente.Nombre = nombre;
             cliente.Apellido = apellido;
             cliente.Direccion = direccion;
-            cliente.NumeroTelefono = numeroTelefono;
+            cliente.Telefono = numeroTelefono;
             cliente.Facebook = facebook;
             cliente.Auto.Patente = patente;
-            cliente.Auto.Marca = marca;
-            cliente.Auto.Modelo = modelo;
-            cliente.Auto.Anio = anio;
+            cliente.Auto.EnumModelo = (eModelos)modelo;
+            cliente.Auto.EnumAño = anio;
             cliente.Servicio.Problemas = problemas;
             cliente.Servicio.PruebasRealizadas = pruebas;
             cliente.Servicio.Repuestos = repuestos;
-            cliente.Servicio.Precios = precio;
+            cliente.Servicio.Precio = precio;
             cliente.Servicio.Observaciones = observaciones;
 
             Console.WriteLine("Cliente actualizado exitosamente.");
@@ -236,7 +234,7 @@ namespace ConsoleApp
             Console.WriteLine("Ingrese el ID del cliente que desea eliminar:");
             int id = int.Parse(Console.ReadLine());
 
-            Cliente cliente = clientes.Find(c => c.Id == id);
+            Cliente cliente = clientes.Find(c => c.ID == id);
             if (cliente == null)
             {
                 Console.WriteLine("Cliente no encontrado.");
@@ -249,6 +247,53 @@ namespace ConsoleApp
             Console.WriteLine("Cliente eliminado exitosamente.");
             Console.WriteLine();
         }
-        
+
+        static void CargarDatosAleatorios(int cantidad)
+        {
+            Random random = new Random();
+
+            string[] nombres = { "Juan", "María", "Carlos", "Laura", "Luis", "Ana", "Pedro", "Sofía", "Manuel", "Carmen" };
+            string[] apellidos = { "Gómez", "Rodríguez", "Pérez", "Fernández", "García", "López", "Martínez", "Díaz" };
+            string[] direcciones = { "Calle 123", "Avenida 456", "Plaza Principal", "Camino Real", "Boulevard 789" };
+            string[] numerosTelefono = { "555-1234", "444-5678", "333-9876", "222-6543", "666-8765" };
+            string[] facebookIds = { "usuario1", "usuario2", "usuario3", "usuario4", "usuario5" };
+            string[] patentes = { "ABC123", "XYZ987", "LMN456", "QRS789", "DEF234" };
+            int[] modelos = { 2,3,4,1,1 };
+            string[] problemas = { "Problema en el motor", "Fallo eléctrico", "Fuga de aceite", "Problema en la transmisión" };
+            string[] pruebas = { "Prueba de frenos", "Prueba de aceleración", "Prueba de suspensión" };
+            string[] repuestos = { "Bujías", "Filtro de aire", "Pastillas de freno", "Amortiguadores" };
+            double[] precios = { 100, 150, 200, 250, 300 };
+
+            for (int i = 0; i < cantidad; i++)
+            {
+                Cliente cliente = new Cliente
+                {
+                    ID = ++lastClientId,
+                    Nombre = nombres[random.Next(nombres.Length)],
+                    Apellido = apellidos[random.Next(apellidos.Length)],
+                    Direccion = direcciones[random.Next(direcciones.Length)],
+                    Telefono = numerosTelefono[random.Next(numerosTelefono.Length)],
+                    Facebook = facebookIds[random.Next(facebookIds.Length)],
+                    Auto = new Auto
+                    {
+                        Patente = patentes[random.Next(patentes.Length)],
+                        EnumModelo = (eModelos)modelos[random.Next(modelos.Length)],
+                        EnumAño = random.Next(1995, 2010) // Año aleatorio entre 1995 y 2010
+                    },
+                    Servicio = new Servicio
+                    {
+                        Problemas = problemas[random.Next(problemas.Length)],
+                        PruebasRealizadas = pruebas[random.Next(pruebas.Length)],
+                        Repuestos = repuestos[random.Next(repuestos.Length)],
+                        Precio = precios[random.Next(precios.Length)],
+                        Observaciones = $"Observaciones del cliente {i + 1}"
+                    },
+                    FechaLlegada = DateTime.Now.AddDays(-random.Next(1, 30)), // Fecha aleatoria de llegada en los últimos 30 días
+                    FechaSalida = DateTime.Now.AddDays(-random.Next(0, 5)) // Fecha aleatoria de salida en los últimos 5 días
+                };
+
+                clientes.Add(cliente);
+            }
+        }
     }
 }
