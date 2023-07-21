@@ -343,6 +343,7 @@
             Name = "FrmMenu";
             StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             Text = "Don Sergio's";
+            Load += FrmMenu_Load;
             panelSIdeMenu.ResumeLayout(false);
             panelSubMenuEstadistica.ResumeLayout(false);
             panelSubMenuLstados.ResumeLayout(false);

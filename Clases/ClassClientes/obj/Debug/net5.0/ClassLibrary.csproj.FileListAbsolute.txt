@@ -10,3 +10,6 @@ C:\Users\54115\Desktop\PC\Programacion\Don Sergios\Clases\ClassClientes\obj\Debu
 C:\Users\54115\Desktop\PC\Programacion\Don Sergios\Clases\ClassClientes\obj\Debug\net5.0\refint\ClassLibrary.dll
 C:\Users\54115\Desktop\PC\Programacion\Don Sergios\Clases\ClassClientes\obj\Debug\net5.0\ClassLibrary.pdb
 C:\Users\54115\Desktop\PC\Programacion\Don Sergios\Clases\ClassClientes\obj\Debug\net5.0\ref\ClassLibrary.dll
+C:\Users\54115\Desktop\PC\Programacion\Don Sergios\Clases\ClassClientes\bin\Debug\net5.0\ClassLibrary.runtimeconfig.json
+C:\Users\54115\Desktop\PC\Programacion\Don Sergios\Clases\ClassClientes\bin\Debug\net5.0\ClassLibrary.runtimeconfig.dev.json
+C:\Users\54115\Desktop\PC\Programacion\Don Sergios\Clases\ClassClientes\obj\Debug\net5.0\ClassLibrary.genruntimeconfig.cache

@@ -1,4 +1,5 @@
 ﻿using ClassClientes;
+using ClassLibrary;
 using FrmDonSergios;
 using System;
 using System.Collections.Generic;
@@ -14,7 +15,7 @@ namespace FrmClientes
 {
     public partial class FrmMenu : Form
     {
-        public static List<Cliente> listaCLiente = new List<Cliente>();
+        public static List<Cliente> listaCliente = new List<Cliente>();
 
         public static FrmCargaClient formCliente = new FrmCargaClient();
         public static FrmListadoClientes formListadoCliente = new FrmListadoClientes();
@@ -103,6 +104,11 @@ namespace FrmClientes
             openChildForm(FrmMenu.formListadoCliente);
 
             hideSubMenu();
+        }
+
+        private void FrmMenu_Load(object sender, EventArgs e)
+        {
+            FrmMenu.listaCliente = Hardcodeo.CargarDatosAleatorios();
         }
     }
 }
