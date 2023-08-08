@@ -50,10 +50,11 @@ namespace ClassLibrary
                         PruebasRealizadas = pruebas[random.Next(pruebas.Length)],
                         Repuestos = repuestos[random.Next(repuestos.Length)],
                         Precio = precios[random.Next(precios.Length)],
-                        Observaciones = $"Observaciones del cliente {i + 1}"
+                        Observaciones = $"Observaciones del cliente {i + 1}",
+                        FechaLlegada = DateTime.Now.AddDays(-random.Next(1, 30)), // Fecha aleatoria de llegada en los últimos 30 días
+                        FechaSalida = DateTime.Now.AddDays(-random.Next(0, 5)) // Fecha aleatoria de salida en los últimos 5 días
                     },
-                    FechaLlegada = DateTime.Now.AddDays(-random.Next(1, 30)), // Fecha aleatoria de llegada en los últimos 30 días
-                    FechaSalida = DateTime.Now.AddDays(-random.Next(0, 5)) // Fecha aleatoria de salida en los últimos 5 días
+                    
                 };
 
                 clientes.Add(cliente);

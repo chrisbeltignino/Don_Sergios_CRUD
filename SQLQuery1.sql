@@ -45,3 +45,30 @@ CONSTRAINT RELACION_A_SERVICIOS FOREIGN KEY (ID_SERVICIO) REFERENCES SERVICIOS (
 )
 
 
+INSERT INTO MODELOS VALUES
+(''),
+('NEON'),
+('STRATUS'),
+('PT CRUISER'),
+('CARAVAN')
+
+INSERT INTO CLIENTES VALUES
+('Juan', 'Gómez', 'Calle 123', '555-1234', 'usuario1', 1, 1),
+('María', 'Rodríguez', 'Avenida 456', '444-5678', 'usuario2', 2, 2),
+('Carlos', 'Pérez', 'Plaza Principal', '333-9876', 'usuario3', 3, 3),
+('Laura', 'Fernández', 'Camino Real', '222-6543', 'usuario4', 4, 4),
+('Luis', 'García', 'Boulevard 789', '666-8765', 'usuario5', 5, 5)
+
+INSERT INTO AUTOS VALUES
+('ABC123', 2, 1999),
+('XYZ987', 4, 2010),
+('LMN456', 5, 2000),
+('QRS789', 3, 2001),
+('DEF234', 2, 2001);
+
+INSERT INTO SERVICIOS VALUES
+(1, 'Problema en el motor', 'Prueba de frenos', 'Bujías', 100, 'Observaciones 1', '2023-07-15', '2023-07-20'),
+(2, 'Fallo eléctrico', 'Prueba de aceleración', 'Filtro de aire', 150, 'Observaciones 2', '2023-07-16', '2023-07-21'),
+(3, 'Fuga de aceite', 'Prueba de suspensión', 'Pastillas de freno', 200, 'Observaciones 3', '2023-07-17', '2023-07-22'),
+(4, 'Problema en la transmisión', 'Prueba de aceleración', 'Amortiguadores', 250, 'Observaciones 4', '2023-07-18', '2023-07-23'),
+(5, 'Fallo eléctrico', 'Prueba de suspensión', 'Pastillas de freno', 300, 'Observaciones 5', '2023-07-19', '2023-07-24');

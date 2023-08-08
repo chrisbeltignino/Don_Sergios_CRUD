@@ -14,18 +14,20 @@ namespace ClassLibrary
         private string repuestos;
         private double precio;
         private string observaciones;
-        private Cliente cliente;
-        
+        private DateTime fechaLlegada;
+        private DateTime fechaSalida;
+
         public Servicio() { }
 
-        public Servicio(string problemas, string pruebasRealizadas, string repuestos, double precio, string observaciones, Cliente cliente)
+        public Servicio(string problemas, string pruebasRealizadas, string repuestos, double precio, string observaciones, DateTime fechaLlegada, DateTime fechaSalida)
         {
             this.problemas = problemas;
             this.pruebasRealizadas = pruebasRealizadas;
             this.repuestos = repuestos;
             this.precio = precio;
             this.observaciones = observaciones;
-            this.cliente = cliente;
+            this.fechaLlegada = fechaLlegada;
+            this.fechaSalida = fechaSalida;
         }
 
         public string Problemas
@@ -58,10 +60,16 @@ namespace ClassLibrary
             set { precio = value; }
         }
 
-        public Cliente Cliente
+        public DateTime FechaLlegada
         {
-            get { return cliente; }
-            set { cliente = value; }
+            get { return fechaLlegada; }
+            set { fechaLlegada = value; }
+        }
+
+        public DateTime FechaSalida
+        {
+            get { return fechaSalida; }
+            set { fechaSalida = value; }
         }
     }
 }
