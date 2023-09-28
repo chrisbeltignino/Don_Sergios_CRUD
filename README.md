@@ -1,6 +1,6 @@
-# Sistema de Gestión de Tallere de Automóviles "Don Sergios"
+# Sistema de Gestión de Taller de Automóviles "Don Sergios"
 
-El **Sistema de Gestión de Tallere de Automóviles "Don Sergios"** es una aplicación de software que permite al taller de reparación de automóviles gestionar eficazmente sus clientes, vehículos, servicios y reparaciones. Facilita el seguimiento de los servicios prestados, el historial de mantenimiento de los vehículos la administración de clientes y a su vez de repuestos que sean agregados como descripcion, marca y precio aproximado.
+El **Sistema de Gestión de Taller de Automóviles "Don Sergios"** es una aplicación de software que permite al taller de reparación de automóviles gestionar eficazmente sus clientes, vehículos, servicios y reparaciones. Facilita el seguimiento de los servicios prestados, el historial de mantenimiento de los vehículos la administración de clientes y a su vez de repuestos que sean agregados como descripcion, marca y precio aproximado.
 
 ## Contenido
 
