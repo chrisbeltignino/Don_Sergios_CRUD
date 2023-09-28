@@ -7,7 +7,6 @@ El **Sistema de Gestión de Taller de Automóviles "Don Sergios"** es una aplica
 - [Requisitos Previos](#requisitos-previos)
 - [Uso](#uso)
 - [Características](#características)
-- [Contribución](#contribución)
 
 ## Requisitos Previos
 
@@ -33,7 +32,3 @@ Nuestra aplicación ofrece las siguientes funcionalidades:
 - Generación de facturas y presupuestos.
 - Generación de Reportes en caso de imprimir o guardar informacion.
 - Serialización de la base de datos en caso de querer hacer un backup o transportarla a otra computadora para leerlo
-
-## Contribución
-
-¡Agradecemos contribuciones! Si deseas contribuir a este proyecto, sigue las pautas de contribución en nuestro repositorio [enlace_al_repositorio].
