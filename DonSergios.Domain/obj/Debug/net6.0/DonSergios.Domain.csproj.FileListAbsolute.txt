@@ -1,0 +1,14 @@
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\bin\Debug\net6.0\DonSergios.Domain.deps.json
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\bin\Debug\net6.0\DonSergios.Domain.dll
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\bin\Debug\net6.0\DonSergios.Domain.pdb
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\obj\Debug\net6.0\DonSergios.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\obj\Debug\net6.0\DonSergios.Domain.AssemblyInfoInputs.cache
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\obj\Debug\net6.0\DonSergios.Domain.AssemblyInfo.cs
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\obj\Debug\net6.0\DonSergios.Domain.csproj.CoreCompileInputs.cache
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\obj\Debug\net6.0\DonSergios.Domain.dll
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\obj\Debug\net6.0\refint\DonSergios.Domain.dll
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\obj\Debug\net6.0\DonSergios.Domain.pdb
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\obj\Debug\net6.0\ref\DonSergios.Domain.dll
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\bin\Debug\net6.0\DonSergios.Domain.runtimeconfig.json
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\obj\Debug\net6.0\DonSergios.Domain.csproj.AssemblyReference.cache
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Domain\obj\Debug\net6.0\DonSergios.Domain.genruntimeconfig.cache

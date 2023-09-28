@@ -1,0 +1,15 @@
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\bin\Debug\net6.0\DonSergios.Application.deps.json
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\bin\Debug\net6.0\DonSergios.Application.dll
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\bin\Debug\net6.0\DonSergios.Application.pdb
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\bin\Debug\net6.0\DonSergios.Domain.dll
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\bin\Debug\net6.0\DonSergios.Domain.pdb
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\obj\Debug\net6.0\DonSergios.Application.csproj.AssemblyReference.cache
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\obj\Debug\net6.0\DonSergios.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\obj\Debug\net6.0\DonSergios.Application.AssemblyInfoInputs.cache
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\obj\Debug\net6.0\DonSergios.Application.AssemblyInfo.cs
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\obj\Debug\net6.0\DonSergios.Application.csproj.CoreCompileInputs.cache
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\obj\Debug\net6.0\DonSergios.Application.csproj.CopyComplete
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\obj\Debug\net6.0\DonSergios.Application.dll
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\obj\Debug\net6.0\refint\DonSergios.Application.dll
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\obj\Debug\net6.0\DonSergios.Application.pdb
+C:\Users\assas\OneDrive\Escritorio\Programacion\CRUD_Don_Sergios\DonSergios.Application.Interface\obj\Debug\net6.0\ref\DonSergios.Application.dll
