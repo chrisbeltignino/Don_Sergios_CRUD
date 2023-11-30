@@ -32,11 +32,13 @@ namespace DonSergios.Presentation
                 container.Register<IAutoService, AutoService>();
                 container.Register<IServicioService, ServicioService>();
                 container.Register<IModeloService, ModeloService>();
+                container.Register<IRepuestoService, RepuestoService>();
 
                 container.Register<IClienteRepository, ClienteRepository>();
                 container.Register<IAutoRepository, AutoRepository>();
                 container.Register<IServicioRepository, ServicioRepository>();
                 container.Register<IModeloRepository, ModeloRepository>();
+                container.Register<IRepuestoRepository, RepuestoRepository>();
 
                 // Registra tu DbContext aquí
                 container.Register<DBDON_SERGIOSEntities>(Lifestyle.Scoped);
@@ -58,7 +60,8 @@ namespace DonSergios.Presentation
                     container.GetInstance<IClienteService>(),
                     container.GetInstance<IAutoService>(),
                     container.GetInstance<IServicioService>(),
-                    container.GetInstance<IModeloService>()));
+                    container.GetInstance<IModeloService>(),
+                    container.GetInstance<IRepuestoService>()));
             }
         }
     }

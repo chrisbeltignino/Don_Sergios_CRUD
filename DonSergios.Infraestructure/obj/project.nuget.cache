@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "TmyfXW8U1c0LBjtJ4/dNWnCALcOXtIaMMQqY+jVQo+lLH18hMR92HC8p5HWkoRzNTOEyCoAfn4Niy0i/wVPEpA==",
+  "dgSpecHash": "iRre3mtdYfg69t+ttEDu6QNuvi+JSNQUIzdTI+cB3Mx3rhc5cknpw1dmPx7Mm8k9L2/u2cyGKdnWk0r45NPunQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Infraestructure\\DonSergios.Infraestructure.csproj",
+  "projectFilePath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Infraestructure\\DonSergios.Infraestructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\assas\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\assas\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

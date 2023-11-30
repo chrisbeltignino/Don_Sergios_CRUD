@@ -1654,11 +1654,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Application.Interface\\DonSergios.Applications.csproj",
+      "projectUniqueName": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Application.Interface\\DonSergios.Applications.csproj",
       "projectName": "DonSergios.Applications",
-      "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Application.Interface\\DonSergios.Applications.csproj",
+      "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Application.Interface\\DonSergios.Applications.csproj",
       "packagesPath": "C:\\Users\\assas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Application.Interface\\obj\\",
+      "outputPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Application.Interface\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1680,8 +1680,8 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj": {
-              "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj"
+            "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj": {
+              "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj"
             }
           }
         }

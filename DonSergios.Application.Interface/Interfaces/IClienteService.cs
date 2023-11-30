@@ -12,6 +12,5 @@ namespace DonSergios.Applications.Interfaces
         List<CLIENTES> BuscarTelefono(string cTelefono);
         List<CLIENTES> BuscarNombre(string cNombre);
         List<CLIENTES> GetClientesByModelo(string cModelo);
-
     }
 }

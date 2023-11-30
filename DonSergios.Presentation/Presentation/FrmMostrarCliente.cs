@@ -101,7 +101,6 @@ namespace DonSergios.Presentation.Presentation
 
         private void btn_Editar_Click(object sender, EventArgs e)
         {
-            txt_ID.Enabled = true;
             txt_Nombre.Enabled = true;
             txt_Apellido.Enabled = true;
             txt_Direccion.Enabled = true;
@@ -120,6 +119,7 @@ namespace DonSergios.Presentation.Presentation
             dtp_Salida.Enabled = true;
             btn_Editar.Enabled = false;
             btn_Guardar.Enabled = true;
+            btn_Editar.Enabled = false;
             //LlenarComboBoxModelos();
         }
 
@@ -217,7 +217,7 @@ namespace DonSergios.Presentation.Presentation
                         // Limpia los campos después de guardar los datos
                         LimpiarCampos();
 
-                        
+
 
                         this.Close();
                     }

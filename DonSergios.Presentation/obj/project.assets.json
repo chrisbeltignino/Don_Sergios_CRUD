@@ -4087,11 +4087,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Presentation\\DonSergios.Presentation.csproj",
+      "projectUniqueName": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Presentation\\DonSergios.Presentation.csproj",
       "projectName": "DonSergios.Presentation",
-      "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Presentation\\DonSergios.Presentation.csproj",
+      "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Presentation\\DonSergios.Presentation.csproj",
       "packagesPath": "C:\\Users\\assas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Presentation\\obj\\",
+      "outputPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Presentation\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -4113,14 +4113,14 @@
         "net6.0-windows7.0": {
           "targetAlias": "net6.0-windows",
           "projectReferences": {
-            "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Application.Interface\\DonSergios.Applications.csproj": {
-              "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Application.Interface\\DonSergios.Applications.csproj"
+            "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Application.Interface\\DonSergios.Applications.csproj": {
+              "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Application.Interface\\DonSergios.Applications.csproj"
             },
-            "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj": {
-              "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj"
+            "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj": {
+              "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj"
             },
-            "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Infraestructure\\DonSergios.Infraestructure.csproj": {
-              "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Infraestructure\\DonSergios.Infraestructure.csproj"
+            "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Infraestructure\\DonSergios.Infraestructure.csproj": {
+              "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Infraestructure\\DonSergios.Infraestructure.csproj"
             }
           }
         }

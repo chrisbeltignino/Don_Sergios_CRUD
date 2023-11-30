@@ -4,9 +4,10 @@ namespace DonSergios.Applications.Interfaces
 {
     public interface IRepuestoRepository
     {
-        void Create(SERVICIOS sServicio);
-        List<SERVICIOS> Read();
-        void Update(SERVICIOS sServicio);
-        void Delete(int sID);
+        void Create(REPUESTOS rRepuesto);
+        List<REPUESTOS> Read();
+        REPUESTOS GetRepuestoByID(int ID);
+        void Update(REPUESTOS rRepuesto);
+        void Delete(int rID);
     }
 }

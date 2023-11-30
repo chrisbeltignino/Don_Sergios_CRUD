@@ -17,8 +17,9 @@ namespace DonSergios.Presentation
         private readonly IAutoService autoService;
         private readonly IServicioService servicioService;
         private readonly IModeloService modeloService;
+        private readonly IRepuestoService repuestoService;
 
-        public FrmMenu(IClienteService clienteService, IAutoService autoService, IServicioService servicioService, IModeloService modeloService)
+        public FrmMenu(IClienteService clienteService, IAutoService autoService, IServicioService servicioService, IModeloService modeloService, IRepuestoService repuestoService)
         {
             InitializeComponent();
 
@@ -37,6 +38,7 @@ namespace DonSergios.Presentation
             this.autoService = autoService;
             this.servicioService = servicioService;
             this.modeloService = modeloService;
+            this.repuestoService = repuestoService;
         }
 
         private void FrmMenu_Load(object sender, EventArgs e)
@@ -107,7 +109,7 @@ namespace DonSergios.Presentation
         private void btn_Repuestos_Click(object sender, EventArgs e)
         {
             ActivateButton(sender, RGBColors.color3);
-            OpenChildForm(new FrmRepuestos());
+            OpenChildForm(new FrmRepuestos(repuestoService, db));
         }
 
         private void btn_Autos_Click(object sender, EventArgs e)

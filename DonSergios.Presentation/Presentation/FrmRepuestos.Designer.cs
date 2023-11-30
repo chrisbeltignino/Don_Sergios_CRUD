@@ -31,10 +31,10 @@
             panel1 = new Panel();
             dgvListaRepuestos = new DataGridView();
             panelControl = new Panel();
+            btn_Refresh = new FontAwesome.Sharp.IconButton();
             btn_Eliminar = new FontAwesome.Sharp.IconButton();
             btn_Editar = new FontAwesome.Sharp.IconButton();
             btn_Agregar = new FontAwesome.Sharp.IconButton();
-            iconButton1 = new FontAwesome.Sharp.IconButton();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dgvListaRepuestos).BeginInit();
             panelControl.SuspendLayout();
@@ -63,13 +63,14 @@
             dgvListaRepuestos.RowTemplate.Height = 25;
             dgvListaRepuestos.Size = new Size(1130, 578);
             dgvListaRepuestos.TabIndex = 0;
+            dgvListaRepuestos.CellDoubleClick += dgvListaRepuestos_CellDoubleClick;
             // 
             // panelControl
             // 
             panelControl.Anchor = AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
             panelControl.AutoSize = true;
             panelControl.BackColor = Color.FromArgb(50, 0, 50);
-            panelControl.Controls.Add(iconButton1);
+            panelControl.Controls.Add(btn_Refresh);
             panelControl.Controls.Add(btn_Eliminar);
             panelControl.Controls.Add(btn_Editar);
             panelControl.Controls.Add(btn_Agregar);
@@ -77,6 +78,26 @@
             panelControl.Name = "panelControl";
             panelControl.Size = new Size(1130, 59);
             panelControl.TabIndex = 7;
+            // 
+            // btn_Refresh
+            // 
+            btn_Refresh.Anchor = AnchorStyles.Top | AnchorStyles.Right;
+            btn_Refresh.BackColor = Color.SteelBlue;
+            btn_Refresh.FlatAppearance.BorderSize = 0;
+            btn_Refresh.FlatStyle = FlatStyle.Flat;
+            btn_Refresh.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_Refresh.ForeColor = Color.White;
+            btn_Refresh.IconChar = FontAwesome.Sharp.IconChar.Rotate;
+            btn_Refresh.IconColor = Color.White;
+            btn_Refresh.IconFont = FontAwesome.Sharp.IconFont.Auto;
+            btn_Refresh.IconSize = 26;
+            btn_Refresh.Location = new Point(1082, 14);
+            btn_Refresh.Name = "btn_Refresh";
+            btn_Refresh.Size = new Size(34, 30);
+            btn_Refresh.TabIndex = 6;
+            btn_Refresh.TextImageRelation = TextImageRelation.ImageBeforeText;
+            btn_Refresh.UseVisualStyleBackColor = false;
+            btn_Refresh.Click += btn_Refresh_Click;
             // 
             // btn_Eliminar
             // 
@@ -97,6 +118,7 @@
             btn_Eliminar.Text = "Eliminar";
             btn_Eliminar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_Eliminar.UseVisualStyleBackColor = false;
+            btn_Eliminar.Click += btn_Eliminar_Click;
             // 
             // btn_Editar
             // 
@@ -117,6 +139,7 @@
             btn_Editar.Text = "Editar";
             btn_Editar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_Editar.UseVisualStyleBackColor = false;
+            btn_Editar.Click += btn_Editar_Click;
             // 
             // btn_Agregar
             // 
@@ -137,25 +160,7 @@
             btn_Agregar.Text = "Agregar";
             btn_Agregar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_Agregar.UseVisualStyleBackColor = false;
-            // 
-            // iconButton1
-            // 
-            iconButton1.Anchor = AnchorStyles.Top | AnchorStyles.Right;
-            iconButton1.BackColor = Color.SteelBlue;
-            iconButton1.FlatAppearance.BorderSize = 0;
-            iconButton1.FlatStyle = FlatStyle.Flat;
-            iconButton1.Font = new Font("Segoe UI", 11.25F, FontStyle.Bold, GraphicsUnit.Point);
-            iconButton1.ForeColor = Color.White;
-            iconButton1.IconChar = FontAwesome.Sharp.IconChar.Rotate;
-            iconButton1.IconColor = Color.White;
-            iconButton1.IconFont = FontAwesome.Sharp.IconFont.Auto;
-            iconButton1.IconSize = 26;
-            iconButton1.Location = new Point(1082, 14);
-            iconButton1.Name = "iconButton1";
-            iconButton1.Size = new Size(34, 30);
-            iconButton1.TabIndex = 6;
-            iconButton1.TextImageRelation = TextImageRelation.ImageBeforeText;
-            iconButton1.UseVisualStyleBackColor = false;
+            btn_Agregar.Click += btn_Agregar_Click;
             // 
             // FrmRepuestos
             // 
@@ -168,6 +173,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "FrmRepuestos";
             Text = "Repuestos";
+            Load += FrmRepuestos_Load;
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dgvListaRepuestos).EndInit();
             panelControl.ResumeLayout(false);
@@ -182,6 +188,6 @@
         private FontAwesome.Sharp.IconButton btn_Eliminar;
         private FontAwesome.Sharp.IconButton btn_Editar;
         private FontAwesome.Sharp.IconButton btn_Agregar;
-        private FontAwesome.Sharp.IconButton iconButton1;
+        private FontAwesome.Sharp.IconButton btn_Refresh;
     }
 }

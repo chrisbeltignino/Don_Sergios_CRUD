@@ -29,22 +29,29 @@
         private void InitializeComponent()
         {
             gpb_Campos = new GroupBox();
-            txt_Motor = new TextBox();
-            label17 = new Label();
-            txt_ID = new TextBox();
+            txt_IDServicio = new TextBox();
+            txt_IDAuto = new TextBox();
             label16 = new Label();
             btn_Editar = new FontAwesome.Sharp.IconButton();
             btn_Guardar = new FontAwesome.Sharp.IconButton();
-            cmb_Modelo = new ComboBox();
             btn_Cancelar = new FontAwesome.Sharp.IconButton();
             btn_Aceptar = new FontAwesome.Sharp.IconButton();
             dtp_Salida = new DateTimePicker();
             dtp_Llegada = new DateTimePicker();
-            txt_PrecioTotal = new TextBox();
             txt_Repuestos = new TextBox();
             txt_Pruebas = new TextBox();
             txt_Observaciones = new TextBox();
             txt_Problemas = new TextBox();
+            label15 = new Label();
+            label14 = new Label();
+            label12 = new Label();
+            label11 = new Label();
+            label10 = new Label();
+            label9 = new Label();
+            txt_Motor = new TextBox();
+            label1 = new Label();
+            cmb_Modelo = new ComboBox();
+            txt_PrecioTotal = new TextBox();
             txt_Año = new TextBox();
             txt_Patente = new TextBox();
             txt_Facebook = new TextBox();
@@ -52,13 +59,7 @@
             txt_Direccion = new TextBox();
             txt_Apellido = new TextBox();
             txt_Nombre = new TextBox();
-            label15 = new Label();
-            label14 = new Label();
             label13 = new Label();
-            label12 = new Label();
-            label11 = new Label();
-            label10 = new Label();
-            label9 = new Label();
             label8 = new Label();
             label7 = new Label();
             label6 = new Label();
@@ -66,54 +67,53 @@
             label4 = new Label();
             label3 = new Label();
             label2 = new Label();
-            label1 = new Label();
-            txt_IDAuto = new TextBox();
-            txt_IDServicio = new TextBox();
+            label17 = new Label();
+            txt_ID = new TextBox();
             gpb_Campos.SuspendLayout();
             SuspendLayout();
             // 
             // gpb_Campos
             // 
-            gpb_Campos.Controls.Add(txt_IDServicio);
-            gpb_Campos.Controls.Add(txt_IDAuto);
-            gpb_Campos.Controls.Add(txt_Motor);
-            gpb_Campos.Controls.Add(label17);
             gpb_Campos.Controls.Add(txt_ID);
-            gpb_Campos.Controls.Add(label16);
-            gpb_Campos.Controls.Add(btn_Editar);
-            gpb_Campos.Controls.Add(btn_Guardar);
+            gpb_Campos.Controls.Add(txt_Motor);
+            gpb_Campos.Controls.Add(txt_IDServicio);
+            gpb_Campos.Controls.Add(label1);
+            gpb_Campos.Controls.Add(txt_IDAuto);
             gpb_Campos.Controls.Add(cmb_Modelo);
-            gpb_Campos.Controls.Add(btn_Cancelar);
-            gpb_Campos.Controls.Add(btn_Aceptar);
-            gpb_Campos.Controls.Add(dtp_Salida);
-            gpb_Campos.Controls.Add(dtp_Llegada);
             gpb_Campos.Controls.Add(txt_PrecioTotal);
-            gpb_Campos.Controls.Add(txt_Repuestos);
-            gpb_Campos.Controls.Add(txt_Pruebas);
-            gpb_Campos.Controls.Add(txt_Observaciones);
-            gpb_Campos.Controls.Add(txt_Problemas);
+            gpb_Campos.Controls.Add(label16);
             gpb_Campos.Controls.Add(txt_Año);
+            gpb_Campos.Controls.Add(btn_Editar);
             gpb_Campos.Controls.Add(txt_Patente);
+            gpb_Campos.Controls.Add(btn_Guardar);
             gpb_Campos.Controls.Add(txt_Facebook);
+            gpb_Campos.Controls.Add(btn_Cancelar);
             gpb_Campos.Controls.Add(txt_Telefono);
+            gpb_Campos.Controls.Add(btn_Aceptar);
             gpb_Campos.Controls.Add(txt_Direccion);
             gpb_Campos.Controls.Add(txt_Apellido);
+            gpb_Campos.Controls.Add(dtp_Salida);
             gpb_Campos.Controls.Add(txt_Nombre);
-            gpb_Campos.Controls.Add(label15);
-            gpb_Campos.Controls.Add(label14);
+            gpb_Campos.Controls.Add(dtp_Llegada);
             gpb_Campos.Controls.Add(label13);
+            gpb_Campos.Controls.Add(txt_Repuestos);
+            gpb_Campos.Controls.Add(label8);
+            gpb_Campos.Controls.Add(txt_Pruebas);
+            gpb_Campos.Controls.Add(label7);
+            gpb_Campos.Controls.Add(txt_Observaciones);
+            gpb_Campos.Controls.Add(label6);
+            gpb_Campos.Controls.Add(txt_Problemas);
+            gpb_Campos.Controls.Add(label5);
+            gpb_Campos.Controls.Add(label15);
+            gpb_Campos.Controls.Add(label4);
+            gpb_Campos.Controls.Add(label14);
+            gpb_Campos.Controls.Add(label3);
             gpb_Campos.Controls.Add(label12);
+            gpb_Campos.Controls.Add(label2);
             gpb_Campos.Controls.Add(label11);
+            gpb_Campos.Controls.Add(label17);
             gpb_Campos.Controls.Add(label10);
             gpb_Campos.Controls.Add(label9);
-            gpb_Campos.Controls.Add(label8);
-            gpb_Campos.Controls.Add(label7);
-            gpb_Campos.Controls.Add(label6);
-            gpb_Campos.Controls.Add(label5);
-            gpb_Campos.Controls.Add(label4);
-            gpb_Campos.Controls.Add(label3);
-            gpb_Campos.Controls.Add(label2);
-            gpb_Campos.Controls.Add(label1);
             gpb_Campos.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             gpb_Campos.ForeColor = Color.White;
             gpb_Campos.Location = new Point(12, 12);
@@ -123,43 +123,36 @@
             gpb_Campos.TabStop = false;
             gpb_Campos.Text = "Cliente";
             // 
-            // txt_Motor
+            // txt_IDServicio
             // 
-            txt_Motor.BackColor = SystemColors.Window;
-            txt_Motor.BorderStyle = BorderStyle.None;
-            txt_Motor.Enabled = false;
-            txt_Motor.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_Motor.ForeColor = SystemColors.WindowText;
-            txt_Motor.Location = new Point(115, 389);
-            txt_Motor.Name = "txt_Motor";
-            txt_Motor.Size = new Size(147, 18);
-            txt_Motor.TabIndex = 41;
+            txt_IDServicio.BackColor = SystemColors.Window;
+            txt_IDServicio.BorderStyle = BorderStyle.None;
+            txt_IDServicio.Enabled = false;
+            txt_IDServicio.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_IDServicio.ForeColor = SystemColors.WindowText;
+            txt_IDServicio.Location = new Point(579, 519);
+            txt_IDServicio.Name = "txt_IDServicio";
+            txt_IDServicio.Size = new Size(67, 18);
+            txt_IDServicio.TabIndex = 43;
+            txt_IDServicio.Visible = false;
             // 
-            // label17
+            // txt_IDAuto
             // 
-            label17.AutoSize = true;
-            label17.Location = new Point(47, 386);
-            label17.Name = "label17";
-            label17.Size = new Size(62, 21);
-            label17.TabIndex = 40;
-            label17.Text = "Motor:";
-            // 
-            // txt_ID
-            // 
-            txt_ID.BackColor = SystemColors.Window;
-            txt_ID.BorderStyle = BorderStyle.None;
-            txt_ID.Enabled = false;
-            txt_ID.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_ID.ForeColor = SystemColors.WindowText;
-            txt_ID.Location = new Point(117, 31);
-            txt_ID.Name = "txt_ID";
-            txt_ID.Size = new Size(67, 18);
-            txt_ID.TabIndex = 38;
+            txt_IDAuto.BackColor = SystemColors.Window;
+            txt_IDAuto.BorderStyle = BorderStyle.None;
+            txt_IDAuto.Enabled = false;
+            txt_IDAuto.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_IDAuto.ForeColor = SystemColors.WindowText;
+            txt_IDAuto.Location = new Point(579, 495);
+            txt_IDAuto.Name = "txt_IDAuto";
+            txt_IDAuto.Size = new Size(67, 18);
+            txt_IDAuto.TabIndex = 42;
+            txt_IDAuto.Visible = false;
             // 
             // label16
             // 
             label16.AutoSize = true;
-            label16.Location = new Point(82, 28);
+            label16.Location = new Point(80, 30);
             label16.Name = "label16";
             label16.Size = new Size(31, 21);
             label16.TabIndex = 37;
@@ -207,21 +200,6 @@
             btn_Guardar.TextImageRelation = TextImageRelation.ImageBeforeText;
             btn_Guardar.UseVisualStyleBackColor = false;
             btn_Guardar.Click += btn_Guardar_Click;
-            // 
-            // cmb_Modelo
-            // 
-            cmb_Modelo.BackColor = SystemColors.Window;
-            cmb_Modelo.Enabled = false;
-            cmb_Modelo.FlatStyle = FlatStyle.Flat;
-            cmb_Modelo.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            cmb_Modelo.ForeColor = SystemColors.WindowText;
-            cmb_Modelo.FormattingEnabled = true;
-            cmb_Modelo.Location = new Point(115, 308);
-            cmb_Modelo.Name = "cmb_Modelo";
-            cmb_Modelo.Size = new Size(147, 25);
-            cmb_Modelo.TabIndex = 33;
-            cmb_Modelo.SelectedIndexChanged += cmb_Modelo_SelectedIndexChanged;
-            cmb_Modelo.MouseClick += cmb_Modelo_MouseClick;
             // 
             // btn_Cancelar
             // 
@@ -283,18 +261,6 @@
             dtp_Llegada.Size = new Size(249, 23);
             dtp_Llegada.TabIndex = 29;
             // 
-            // txt_PrecioTotal
-            // 
-            txt_PrecioTotal.BackColor = SystemColors.Window;
-            txt_PrecioTotal.BorderStyle = BorderStyle.None;
-            txt_PrecioTotal.Enabled = false;
-            txt_PrecioTotal.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_PrecioTotal.ForeColor = SystemColors.WindowText;
-            txt_PrecioTotal.Location = new Point(140, 425);
-            txt_PrecioTotal.Name = "txt_PrecioTotal";
-            txt_PrecioTotal.Size = new Size(100, 18);
-            txt_PrecioTotal.TabIndex = 28;
-            // 
             // txt_Repuestos
             // 
             txt_Repuestos.Enabled = false;
@@ -335,90 +301,6 @@
             txt_Problemas.Size = new Size(266, 172);
             txt_Problemas.TabIndex = 24;
             // 
-            // txt_Año
-            // 
-            txt_Año.BackColor = SystemColors.Window;
-            txt_Año.BorderStyle = BorderStyle.None;
-            txt_Año.Enabled = false;
-            txt_Año.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_Año.ForeColor = SystemColors.WindowText;
-            txt_Año.Location = new Point(115, 352);
-            txt_Año.Name = "txt_Año";
-            txt_Año.Size = new Size(147, 18);
-            txt_Año.TabIndex = 23;
-            // 
-            // txt_Patente
-            // 
-            txt_Patente.BackColor = SystemColors.Window;
-            txt_Patente.BorderStyle = BorderStyle.None;
-            txt_Patente.Enabled = false;
-            txt_Patente.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_Patente.ForeColor = SystemColors.WindowText;
-            txt_Patente.Location = new Point(115, 269);
-            txt_Patente.Name = "txt_Patente";
-            txt_Patente.Size = new Size(147, 18);
-            txt_Patente.TabIndex = 21;
-            // 
-            // txt_Facebook
-            // 
-            txt_Facebook.BackColor = SystemColors.Window;
-            txt_Facebook.BorderStyle = BorderStyle.None;
-            txt_Facebook.Enabled = false;
-            txt_Facebook.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_Facebook.ForeColor = SystemColors.WindowText;
-            txt_Facebook.Location = new Point(115, 228);
-            txt_Facebook.Name = "txt_Facebook";
-            txt_Facebook.Size = new Size(147, 18);
-            txt_Facebook.TabIndex = 20;
-            // 
-            // txt_Telefono
-            // 
-            txt_Telefono.BackColor = SystemColors.Window;
-            txt_Telefono.BorderStyle = BorderStyle.None;
-            txt_Telefono.Enabled = false;
-            txt_Telefono.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_Telefono.ForeColor = SystemColors.WindowText;
-            txt_Telefono.Location = new Point(115, 187);
-            txt_Telefono.Name = "txt_Telefono";
-            txt_Telefono.Size = new Size(147, 18);
-            txt_Telefono.TabIndex = 19;
-            // 
-            // txt_Direccion
-            // 
-            txt_Direccion.BackColor = SystemColors.Window;
-            txt_Direccion.BorderStyle = BorderStyle.None;
-            txt_Direccion.Enabled = false;
-            txt_Direccion.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_Direccion.ForeColor = SystemColors.WindowText;
-            txt_Direccion.Location = new Point(115, 146);
-            txt_Direccion.Name = "txt_Direccion";
-            txt_Direccion.Size = new Size(147, 18);
-            txt_Direccion.TabIndex = 18;
-            // 
-            // txt_Apellido
-            // 
-            txt_Apellido.BackColor = SystemColors.Window;
-            txt_Apellido.BorderStyle = BorderStyle.None;
-            txt_Apellido.Enabled = false;
-            txt_Apellido.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_Apellido.ForeColor = SystemColors.WindowText;
-            txt_Apellido.Location = new Point(115, 106);
-            txt_Apellido.Name = "txt_Apellido";
-            txt_Apellido.Size = new Size(147, 18);
-            txt_Apellido.TabIndex = 17;
-            // 
-            // txt_Nombre
-            // 
-            txt_Nombre.BackColor = SystemColors.Window;
-            txt_Nombre.BorderStyle = BorderStyle.None;
-            txt_Nombre.Enabled = false;
-            txt_Nombre.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_Nombre.ForeColor = SystemColors.WindowText;
-            txt_Nombre.Location = new Point(117, 68);
-            txt_Nombre.Name = "txt_Nombre";
-            txt_Nombre.Size = new Size(147, 18);
-            txt_Nombre.TabIndex = 16;
-            // 
             // label15
             // 
             label15.AutoSize = true;
@@ -436,15 +318,6 @@
             label14.Size = new Size(145, 21);
             label14.TabIndex = 14;
             label14.Text = "Fecha de Llegada:";
-            // 
-            // label13
-            // 
-            label13.AutoSize = true;
-            label13.Location = new Point(29, 422);
-            label13.Name = "label13";
-            label13.Size = new Size(117, 21);
-            label13.TabIndex = 13;
-            label13.Text = "Precio Total: $";
             // 
             // label12
             // 
@@ -482,101 +355,184 @@
             label9.TabIndex = 9;
             label9.Text = "Problemas:";
             // 
+            // txt_Motor
+            // 
+            txt_Motor.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Motor.Location = new Point(117, 287);
+            txt_Motor.Name = "txt_Motor";
+            txt_Motor.Size = new Size(169, 23);
+            txt_Motor.TabIndex = 55;
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.Location = new Point(49, 287);
+            label1.Name = "label1";
+            label1.Size = new Size(62, 21);
+            label1.TabIndex = 54;
+            label1.Text = "Motor:";
+            // 
+            // cmb_Modelo
+            // 
+            cmb_Modelo.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            cmb_Modelo.FormattingEnabled = true;
+            cmb_Modelo.Location = new Point(117, 252);
+            cmb_Modelo.Name = "cmb_Modelo";
+            cmb_Modelo.Size = new Size(169, 23);
+            cmb_Modelo.TabIndex = 53;
+            // 
+            // txt_PrecioTotal
+            // 
+            txt_PrecioTotal.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_PrecioTotal.Location = new Point(142, 413);
+            txt_PrecioTotal.Name = "txt_PrecioTotal";
+            txt_PrecioTotal.Size = new Size(122, 23);
+            txt_PrecioTotal.TabIndex = 52;
+            // 
+            // txt_Año
+            // 
+            txt_Año.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Año.Location = new Point(117, 322);
+            txt_Año.Name = "txt_Año";
+            txt_Año.Size = new Size(120, 23);
+            txt_Año.TabIndex = 51;
+            // 
+            // txt_Patente
+            // 
+            txt_Patente.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Patente.Location = new Point(117, 357);
+            txt_Patente.Name = "txt_Patente";
+            txt_Patente.Size = new Size(120, 23);
+            txt_Patente.TabIndex = 50;
+            // 
+            // txt_Facebook
+            // 
+            txt_Facebook.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Facebook.Location = new Point(117, 217);
+            txt_Facebook.Name = "txt_Facebook";
+            txt_Facebook.Size = new Size(169, 23);
+            txt_Facebook.TabIndex = 49;
+            // 
+            // txt_Telefono
+            // 
+            txt_Telefono.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Telefono.Location = new Point(117, 182);
+            txt_Telefono.Name = "txt_Telefono";
+            txt_Telefono.Size = new Size(169, 23);
+            txt_Telefono.TabIndex = 48;
+            // 
+            // txt_Direccion
+            // 
+            txt_Direccion.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Direccion.Location = new Point(117, 147);
+            txt_Direccion.Name = "txt_Direccion";
+            txt_Direccion.Size = new Size(169, 23);
+            txt_Direccion.TabIndex = 47;
+            // 
+            // txt_Apellido
+            // 
+            txt_Apellido.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Apellido.Location = new Point(117, 112);
+            txt_Apellido.Name = "txt_Apellido";
+            txt_Apellido.Size = new Size(169, 23);
+            txt_Apellido.TabIndex = 46;
+            // 
+            // txt_Nombre
+            // 
+            txt_Nombre.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Nombre.Location = new Point(117, 77);
+            txt_Nombre.Name = "txt_Nombre";
+            txt_Nombre.Size = new Size(169, 23);
+            txt_Nombre.TabIndex = 45;
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.Location = new Point(30, 413);
+            label13.Name = "label13";
+            label13.Size = new Size(117, 21);
+            label13.TabIndex = 44;
+            label13.Text = "Precio Total: $";
+            // 
             // label8
             // 
             label8.AutoSize = true;
-            label8.Location = new Point(64, 350);
+            label8.Location = new Point(66, 322);
             label8.Name = "label8";
             label8.Size = new Size(45, 21);
-            label8.TabIndex = 8;
+            label8.TabIndex = 43;
             label8.Text = "Año:";
             // 
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(36, 308);
+            label7.Location = new Point(38, 252);
             label7.Name = "label7";
             label7.Size = new Size(73, 21);
-            label7.TabIndex = 7;
+            label7.TabIndex = 42;
             label7.Text = "Modelo:";
             // 
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(36, 266);
+            label6.Location = new Point(38, 357);
             label6.Name = "label6";
             label6.Size = new Size(73, 21);
-            label6.TabIndex = 6;
+            label6.TabIndex = 41;
             label6.Text = "Patente:";
             // 
             // label5
             // 
             label5.AutoSize = true;
-            label5.Location = new Point(21, 226);
+            label5.Location = new Point(23, 217);
             label5.Name = "label5";
             label5.Size = new Size(88, 21);
-            label5.TabIndex = 5;
+            label5.TabIndex = 40;
             label5.Text = "Facebook:";
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(28, 184);
+            label4.Location = new Point(30, 182);
             label4.Name = "label4";
             label4.Size = new Size(81, 21);
-            label4.TabIndex = 4;
+            label4.TabIndex = 39;
             label4.Text = "Teléfono:";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(23, 143);
+            label3.Location = new Point(24, 147);
             label3.Name = "label3";
             label3.Size = new Size(87, 21);
-            label3.TabIndex = 3;
+            label3.TabIndex = 38;
             label3.Text = "Direccion:";
             // 
             // label2
             // 
             label2.AutoSize = true;
-            label2.Location = new Point(18, 103);
+            label2.Location = new Point(20, 112);
             label2.Name = "label2";
             label2.Size = new Size(93, 21);
-            label2.TabIndex = 2;
+            label2.TabIndex = 37;
             label2.Text = "Apellido/s:";
             // 
-            // label1
+            // label17
             // 
-            label1.AutoSize = true;
-            label1.Location = new Point(22, 65);
-            label1.Name = "label1";
-            label1.Size = new Size(91, 21);
-            label1.TabIndex = 1;
-            label1.Text = "Nombre/s:";
+            label17.AutoSize = true;
+            label17.Location = new Point(20, 77);
+            label17.Name = "label17";
+            label17.Size = new Size(91, 21);
+            label17.TabIndex = 36;
+            label17.Text = "Nombre/s:";
             // 
-            // txt_IDAuto
+            // txt_ID
             // 
-            txt_IDAuto.BackColor = SystemColors.Window;
-            txt_IDAuto.BorderStyle = BorderStyle.None;
-            txt_IDAuto.Enabled = false;
-            txt_IDAuto.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_IDAuto.ForeColor = SystemColors.WindowText;
-            txt_IDAuto.Location = new Point(579, 495);
-            txt_IDAuto.Name = "txt_IDAuto";
-            txt_IDAuto.Size = new Size(67, 18);
-            txt_IDAuto.TabIndex = 42;
-            // 
-            // txt_IDServicio
-            // 
-            txt_IDServicio.BackColor = SystemColors.Window;
-            txt_IDServicio.BorderStyle = BorderStyle.None;
-            txt_IDServicio.Enabled = false;
-            txt_IDServicio.Font = new Font("Segoe UI", 9.75F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_IDServicio.ForeColor = SystemColors.WindowText;
-            txt_IDServicio.Location = new Point(579, 519);
-            txt_IDServicio.Name = "txt_IDServicio";
-            txt_IDServicio.Size = new Size(67, 18);
-            txt_IDServicio.TabIndex = 43;
+            txt_ID.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_ID.Location = new Point(117, 30);
+            txt_ID.Name = "txt_ID";
+            txt_ID.Size = new Size(68, 23);
+            txt_ID.TabIndex = 56;
             // 
             // FrmMostrarCliente
             // 
@@ -601,16 +557,29 @@
         #endregion
 
         private GroupBox gpb_Campos;
-        private ComboBox cmb_Modelo;
         private FontAwesome.Sharp.IconButton btn_Cancelar;
         private FontAwesome.Sharp.IconButton btn_Aceptar;
         private DateTimePicker dtp_Salida;
         private DateTimePicker dtp_Llegada;
-        private TextBox txt_PrecioTotal;
         private TextBox txt_Repuestos;
         private TextBox txt_Pruebas;
         private TextBox txt_Observaciones;
         private TextBox txt_Problemas;
+        private Label label15;
+        private Label label14;
+        private Label label12;
+        private Label label11;
+        private Label label10;
+        private Label label9;
+        private FontAwesome.Sharp.IconButton btn_Guardar;
+        private FontAwesome.Sharp.IconButton btn_Editar;
+        private Label label16;
+        private TextBox txt_IDServicio;
+        private TextBox txt_IDAuto;
+        private TextBox txt_Motor;
+        private Label label1;
+        private ComboBox cmb_Modelo;
+        private TextBox txt_PrecioTotal;
         private TextBox txt_Año;
         private TextBox txt_Patente;
         private TextBox txt_Facebook;
@@ -618,13 +587,7 @@
         private TextBox txt_Direccion;
         private TextBox txt_Apellido;
         private TextBox txt_Nombre;
-        private Label label15;
-        private Label label14;
         private Label label13;
-        private Label label12;
-        private Label label11;
-        private Label label10;
-        private Label label9;
         private Label label8;
         private Label label7;
         private Label label6;
@@ -632,14 +595,7 @@
         private Label label4;
         private Label label3;
         private Label label2;
-        private Label label1;
-        private FontAwesome.Sharp.IconButton btn_Guardar;
-        private FontAwesome.Sharp.IconButton btn_Editar;
-        private TextBox txt_ID;
-        private Label label16;
-        private TextBox txt_Motor;
         private Label label17;
-        private TextBox txt_IDServicio;
-        private TextBox txt_IDAuto;
+        private TextBox txt_ID;
     }
 }

@@ -152,7 +152,11 @@ namespace DonSergios.Presentation.Presentation
             dgvListaClientes.DataSource = query.ToList(); // Asigna los resultados al DataGridView
 
         }
-
+        /// <summary>
+        /// 
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
         private void txt_BuscarTelefono_TextChanged(object sender, EventArgs e)
         {
             if (txt_BuscarTelefono.Text != string.Empty)

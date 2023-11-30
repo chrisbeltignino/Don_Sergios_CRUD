@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VNZu/0yKUfWBBDD+MzKz5vPKkJ07vA0xe+lsOS1+5RdvuMR2TU2h3rGK81AReqO528Qt9DibX1g8dzsIS/gIkQ==",
+  "dgSpecHash": "Gc4Gk4KFheyGmY7OmbuX/pYmljyillxSaN7M7gnI8nPND1eNFhLcVm9MqqbuN0ng5wp5ZZSVPQLz/DQIkpYd8A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Application.Interface\\DonSergios.Applications.csproj",
+  "projectFilePath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Application.Interface\\DonSergios.Applications.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\assas\\.nuget\\packages\\entityframework\\6.4.4\\entityframework.6.4.4.nupkg.sha512",
     "C:\\Users\\assas\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",

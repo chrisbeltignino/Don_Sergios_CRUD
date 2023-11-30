@@ -21,6 +21,7 @@ namespace DonSergios.Infraestructure.Persistence
         public virtual DbSet<CLIENTES> CLIENTES { get; set; }
         public virtual DbSet<MODELOS> MODELOS { get; set; }
         public virtual DbSet<SERVICIOS> SERVICIOS { get; set; }
+        public virtual DbSet<REPUESTOS> REPUESTOS { get; set; }
 
         // Otros métodos y configuraciones del contexto si es necesario
     }

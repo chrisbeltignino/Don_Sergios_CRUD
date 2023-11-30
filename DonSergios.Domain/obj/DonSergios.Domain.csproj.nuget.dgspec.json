@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj": {}
+    "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj": {
+    "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj",
         "projectName": "DonSergios.Domain",
-        "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj",
+        "projectPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Domain\\DonSergios.Domain.csproj",
         "packagesPath": "C:\\Users\\assas\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\CRUD_Don_Sergios\\DonSergios.Domain\\obj\\",
+        "outputPath": "C:\\Users\\assas\\OneDrive\\Escritorio\\Programacion\\C#\\CRUD_Don_Sergios\\DonSergios.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

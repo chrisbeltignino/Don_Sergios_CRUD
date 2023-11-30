@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             gpb_Campos = new GroupBox();
+            txt_Motor = new TextBox();
+            label16 = new Label();
             cmb_Modelo = new ComboBox();
             btn_Cancelar = new FontAwesome.Sharp.IconButton();
             btn_Aceptar = new FontAwesome.Sharp.IconButton();
@@ -61,8 +63,6 @@
             label3 = new Label();
             label2 = new Label();
             label1 = new Label();
-            txt_Motor = new TextBox();
-            label16 = new Label();
             gpb_Campos.SuspendLayout();
             SuspendLayout();
             // 
@@ -111,13 +111,30 @@
             gpb_Campos.TabStop = false;
             gpb_Campos.Text = "Campos a llenar";
             // 
+            // txt_Motor
+            // 
+            txt_Motor.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            txt_Motor.Location = new Point(115, 294);
+            txt_Motor.Name = "txt_Motor";
+            txt_Motor.Size = new Size(169, 23);
+            txt_Motor.TabIndex = 35;
+            // 
+            // label16
+            // 
+            label16.AutoSize = true;
+            label16.Location = new Point(47, 292);
+            label16.Name = "label16";
+            label16.Size = new Size(62, 21);
+            label16.TabIndex = 34;
+            label16.Text = "Motor:";
+            // 
             // cmb_Modelo
             // 
             cmb_Modelo.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             cmb_Modelo.FormattingEnabled = true;
-            cmb_Modelo.Location = new Point(115, 294);
+            cmb_Modelo.Location = new Point(115, 252);
             cmb_Modelo.Name = "cmb_Modelo";
-            cmb_Modelo.Size = new Size(147, 23);
+            cmb_Modelo.Size = new Size(169, 23);
             cmb_Modelo.TabIndex = 33;
             // 
             // btn_Cancelar
@@ -185,8 +202,9 @@
             txt_PrecioTotal.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_PrecioTotal.Location = new Point(140, 422);
             txt_PrecioTotal.Name = "txt_PrecioTotal";
-            txt_PrecioTotal.Size = new Size(100, 23);
+            txt_PrecioTotal.Size = new Size(122, 23);
             txt_PrecioTotal.TabIndex = 28;
+            txt_PrecioTotal.KeyPress += txt_PrecioTotal_KeyPress;
             // 
             // txt_Repuestos
             // 
@@ -229,23 +247,26 @@
             txt_Año.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_Año.Location = new Point(115, 334);
             txt_Año.Name = "txt_Año";
-            txt_Año.Size = new Size(147, 23);
+            txt_Año.Size = new Size(120, 23);
             txt_Año.TabIndex = 23;
+            txt_Año.KeyPress += txt_Año_KeyPress;
             // 
             // txt_Patente
             // 
             txt_Patente.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_Patente.Location = new Point(115, 254);
+            txt_Patente.Location = new Point(115, 372);
             txt_Patente.Name = "txt_Patente";
-            txt_Patente.Size = new Size(147, 23);
+            txt_Patente.Size = new Size(120, 23);
             txt_Patente.TabIndex = 21;
+            txt_Patente.TextChanged += txt_Patente_TextChanged;
+            txt_Patente.KeyDown += txt_Patente_KeyDown;
             // 
             // txt_Facebook
             // 
             txt_Facebook.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_Facebook.Location = new Point(115, 213);
             txt_Facebook.Name = "txt_Facebook";
-            txt_Facebook.Size = new Size(147, 23);
+            txt_Facebook.Size = new Size(169, 23);
             txt_Facebook.TabIndex = 20;
             // 
             // txt_Telefono
@@ -253,15 +274,16 @@
             txt_Telefono.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_Telefono.Location = new Point(115, 172);
             txt_Telefono.Name = "txt_Telefono";
-            txt_Telefono.Size = new Size(147, 23);
+            txt_Telefono.Size = new Size(169, 23);
             txt_Telefono.TabIndex = 19;
+            txt_Telefono.KeyPress += txt_Telefono_KeyPress;
             // 
             // txt_Direccion
             // 
             txt_Direccion.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_Direccion.Location = new Point(115, 131);
             txt_Direccion.Name = "txt_Direccion";
-            txt_Direccion.Size = new Size(147, 23);
+            txt_Direccion.Size = new Size(169, 23);
             txt_Direccion.TabIndex = 18;
             // 
             // txt_Apellido
@@ -269,16 +291,18 @@
             txt_Apellido.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_Apellido.Location = new Point(115, 91);
             txt_Apellido.Name = "txt_Apellido";
-            txt_Apellido.Size = new Size(147, 23);
+            txt_Apellido.Size = new Size(169, 23);
             txt_Apellido.TabIndex = 17;
+            txt_Apellido.KeyPress += txt_Apellido_KeyPress;
             // 
             // txt_Nombre
             // 
             txt_Nombre.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
             txt_Nombre.Location = new Point(115, 51);
             txt_Nombre.Name = "txt_Nombre";
-            txt_Nombre.Size = new Size(147, 23);
+            txt_Nombre.Size = new Size(169, 23);
             txt_Nombre.TabIndex = 16;
+            txt_Nombre.KeyPress += txt_Nombre_KeyPress;
             // 
             // label15
             // 
@@ -355,7 +379,7 @@
             // label7
             // 
             label7.AutoSize = true;
-            label7.Location = new Point(36, 296);
+            label7.Location = new Point(36, 254);
             label7.Name = "label7";
             label7.Size = new Size(73, 21);
             label7.TabIndex = 7;
@@ -364,7 +388,7 @@
             // label6
             // 
             label6.AutoSize = true;
-            label6.Location = new Point(36, 254);
+            label6.Location = new Point(36, 372);
             label6.Name = "label6";
             label6.Size = new Size(73, 21);
             label6.TabIndex = 6;
@@ -415,23 +439,6 @@
             label1.TabIndex = 1;
             label1.Text = "Nombre/s:";
             // 
-            // txt_Motor
-            // 
-            txt_Motor.Font = new Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point);
-            txt_Motor.Location = new Point(115, 374);
-            txt_Motor.Name = "txt_Motor";
-            txt_Motor.Size = new Size(147, 23);
-            txt_Motor.TabIndex = 35;
-            // 
-            // label16
-            // 
-            label16.AutoSize = true;
-            label16.Location = new Point(47, 372);
-            label16.Name = "label16";
-            label16.Size = new Size(62, 21);
-            label16.TabIndex = 34;
-            label16.Text = "Motor:";
-            // 
             // FrmAgregarCliente
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -446,7 +453,6 @@
             ShowIcon = false;
             ShowInTaskbar = false;
             StartPosition = FormStartPosition.CenterScreen;
-            Text = "Agregar Cliente";
             Load += FrmAgregarCliente_Load;
             gpb_Campos.ResumeLayout(false);
             gpb_Campos.PerformLayout();
